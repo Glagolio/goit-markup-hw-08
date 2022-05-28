@@ -1,0 +1,45 @@
+$primaryTextColor: #757575;
+$titleTextColor: #212121;
+$accentColor: #2196F3;
+$backgroundColor: #FFFFFF;
+$primaryAddressColor: rgba(255, 255, 255, 0.6);
+$secondlyAddressColor: #FFFFFF;
+$backgroundHeroColor: #2F303A;
+$backgroundFooterColor: #2F303A;
+$backgroundBtnColor: #F5F4FA;
+$accentBtnColor: #FFFFFF;
+$backgroudTeamColor: #F5F4FA;
+$backgroungIconColor: #F5F4FA;
+$socialIconColor: #AFB1B8;
+$clientIconColor: #AFB1B8;
+$modalBackdropColor: rgba(0, 0, 0, 0.2);
+$modalLinkColor: #2196F3;
+$modalButtomColor: #188CE8;
+$overlayBackgroundColor: rgba(47, 48, 58, 0.8);
+$backgroundSocialFooter: rgba(255, 255, 255, 0.1);
+
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$heroBackground: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url(../images/hero-background.jpg);
+
+$checkboxIconEmpty: url(../../images/checkbox-empty.svg);
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

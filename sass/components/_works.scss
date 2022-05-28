@@ -1,0 +1,54 @@
+.site-works {
+    padding-top: 0px;
+    padding-bottom: 94px;
+
+    &__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center; 
+      color: $titleTextColor;
+    }
+
+    &__list {
+        @extend .list;
+        margin-top: 50px;
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        position: relative;
+    } 
+    
+    &__picture {
+        display: block;
+    }
+
+    &__overlay {
+        height: 70px;
+       width: 100%;
+       padding-top: 27px;
+       padding-bottom: 27px;
+
+       background-color: $overlayBackgroundColor;
+       
+       text-align: center;
+       font-size: 14px;
+       line-height: 1.14;
+       font-weight: 700;
+       color: $backgroundColor;
+       text-transform: uppercase;
+
+       position: absolute;
+       left: 0;
+       bottom: 0;
+    }
+
+}
