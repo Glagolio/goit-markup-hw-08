@@ -11,7 +11,7 @@
   padding-left: 0;
 }
 
-.section, .site-benefits, .site-team, .site-clients, .site-portfolio {
+.section, .site-benefits, .site-team, .site-clients, .site-footer, .site-portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -59,6 +59,8 @@ body {
 
 .logo--footer {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   color: #FFFFFF;
   margin-bottom: 20px;
 }
@@ -229,6 +231,7 @@ body {
 
 .site-benefits__text {
   line-height: 1.71;
+  color: #757575;
 }
 
 .site-benefits__icon-box {
@@ -360,6 +363,10 @@ body {
           justify-content: center;
 }
 
+.site-social__list:not(:last-child) {
+  margin-right: 10px;
+}
+
 .site-social__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -371,10 +378,6 @@ body {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #AFB1B8;
-}
-
-.site-social__link:not(:last-child) {
-  margin-right: 10px;
 }
 
 .site-social__link:hover, .site-social__link:focus {
@@ -413,12 +416,19 @@ body {
   margin-right: 30px;
 }
 
+.site-clients__item:not(:nth-last-child(-n+2)) {
+  margin-bottom: 30px;
+}
+
 .site-clients__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   max-width: 210px;
-  height: 92px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 52px;
+  padding-right: 52px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
@@ -435,11 +445,23 @@ body {
   background-color: #2F303A;
 }
 
+.site-footer__inner {
+  text-align: center;
+}
+
+.site-footer__item {
+  margin-bottom: 60px;
+}
+
 .site-address {
   color: #FFFFFF;
   font-style: normal;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-address__item:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .site-address__link {
@@ -475,6 +497,10 @@ body {
   color: #FFFFFF;
 }
 
+.site-social--footer {
+  margin-bottom: 60px;
+}
+
 .site-social__link--footer {
   fill: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
@@ -485,6 +511,7 @@ body {
 }
 
 .site-subscribe__text {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
@@ -493,6 +520,13 @@ body {
 }
 
 .site-subscribe__email {
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-top: 15px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -512,6 +546,10 @@ body {
 
 .site-subscribe__button {
   position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 62px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;

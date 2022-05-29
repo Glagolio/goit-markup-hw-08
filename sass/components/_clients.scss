@@ -23,10 +23,18 @@
         margin-right: 30px;
     }
 
+    &__item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 30px;
+    }
+
     &__link {
         display: inline-flex;
       max-width: 210px;
-      height: 92px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 52px;
+      padding-right: 52px;
+
       border: 1px solid $clientIconColor;
       border-radius: 4px;
       fill: $clientIconColor;

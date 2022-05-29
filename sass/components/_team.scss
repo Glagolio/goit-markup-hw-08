@@ -71,8 +71,8 @@
     display: flex;
     justify-content: center;
 
-    &__list {
-        
+    &__list:not(:last-child) {
+        margin-right: 10px;
     }    
 
     // &__list:not(:last-child) {
@@ -81,24 +81,27 @@
     
     &__link {
         display: inline-flex;
+    
        width: 44px;
        height: 44px;
        border-radius: 50%;
        background-color: transparent;
        transition: fill $animation,
        background-color $animation;
-
+   
         fill: $socialIconColor;
-
-        &:not(:last-child) {
-                margin-right: 10px;
-            }
         
         &:hover, &:focus {
             background-color: $accentColor;
             fill: $accentBtnColor;
         }
+
+    
+        
+        
+
     }
+   
 
     &__icon {
        margin-top: auto;
@@ -108,3 +111,4 @@
     }
 }
 
+ 

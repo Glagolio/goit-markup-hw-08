@@ -1,15 +1,15 @@
 .site-footer {
+    @extend .section;
     
     background-color: $backgroundFooterColor;
     
-    // &__inner {
-    //     display: flex;
-    // }
+    &__inner {
+        text-align: center;
+    }
 
-    // &__item {
-    //     width: 226px;
-    //    margin-right: 70px;
-    // }
+    &__item {
+       margin-bottom: 60px;
+    }
 }
 
 .site-address {
@@ -22,9 +22,9 @@
         @extend .list;
     }
 
-    // &__item:not(:last-child) {
-    //     margin-bottom: 9px;
-    // }
+    &__item:not(:last-child) {
+        margin-bottom: 8px;
+    }
     
     &__link {
         font-size: 14px;
@@ -72,7 +72,7 @@
 
 .site-social {
     &--footer{
-        // margin-left: 0;
+        margin-bottom: 60px;
     }
 
     &__link--footer {
@@ -89,7 +89,8 @@
     // padding-top: 15px;
 
     &__text {
-        //  margin-bottom: 23px;
+         margin-bottom: 20px;
+
 
         font-size: 14px;
         line-height: 1.14;
@@ -100,10 +101,14 @@
     }
 
     &__email {
-        // width: 358px;
-        // height: 50px;
-        // margin-right: 12px;
-        // padding-left: 16px;
+        width: 100%;
+        max-width: 450px;
+        height: 50px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        padding-top: 15px;
+        margin-bottom: 20px;
+
 
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -126,10 +131,10 @@
         position: relative;
     
         
-    //     padding-top: 10px;
-    //    padding-bottom: 10px;
-    //    padding-left: 29px;
-    //    padding-right: 62px;
+        padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 29px;
+       padding-right: 62px;
 
        font-family: 'Roboto', sans-serif;
        font-weight: 700;
