@@ -2,16 +2,13 @@
      @extend .section;
 
     &__list {
-    display: flex;
     @extend .list
     }
 
     &__item {
-        width: 270px;
-        margin-right: 30px;
-
-        &:last-child {
-            margin-right: 0;
+        
+        &:not(:last-child) {
+         margin-bottom: 30px;
         }
     }
 
@@ -21,6 +18,7 @@
 
     &__sub-title {
         margin-bottom: 10px;
+        text-align: center;
 
         color: $titleTextColor;
 
@@ -35,9 +33,10 @@
     }
 
     &__icon-box {
-        display: inline-flex;
-        width: 270px;
-        height: 120px;
+        max-width: 450px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        
         border-radius: 4px;
         margin-bottom: 30px;
         align-items: center;

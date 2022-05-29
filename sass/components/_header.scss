@@ -2,17 +2,16 @@
     border-bottom: 1px solid #ECECEC;
 
     &__menu {
-        display: flex;
-        align-items: center;
-        margin-right: 93px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        
     }
 }
 
 
 
 .site-nav {
-    display: flex;
-    align-items: center;
+    
 
     color: $titleTextColor;
 
@@ -28,14 +27,12 @@
         @extend .list;
     }
 
-    &__items:not(:last-child) {
-    margin-right: 50px;
-}
+//     &__items:not(:last-child) {
+//     margin-right: 50px;
+// }
 
     &__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 31px;
+    
 
     position: relative;
 
@@ -73,9 +70,7 @@
 }
 
 .site-contacts {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
+    
 
     list-style: none;
  
@@ -89,20 +84,19 @@
     }
 
     &__item {
-    align-items: center;
+    
     color: $primaryTextColor;
 
     &:hover {
         color: $accentColor;
     }
     
-    &:not(:last-child) {
-        margin-right: 50px;
-    }
+    // &:not(:last-child) {
+       
+    // }
     }
 
     &__link {
-    display: flex;
     color: $primaryTextColor;
 
     font-weight: 500;
@@ -118,7 +112,6 @@
     }
 
     &__icon {
-    margin-right: 10px;
     fill: currentColor;
     margin-bottom: -1px;
 

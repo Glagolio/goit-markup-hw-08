@@ -1,20 +1,21 @@
 .site-hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
     max-width: 1600px;
-    height: 600px;
+
     background-image: $heroBackground;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-right: auto;
-    margin-left: auto;
+    
 
     text-align: center;
 
     &__title {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;

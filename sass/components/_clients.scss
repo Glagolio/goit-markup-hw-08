@@ -2,26 +2,30 @@
     @extend .section;
 
     &__title {
+        margin-bottom: 30px;
+
         color: $titleTextColor;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.17;
         text-align: center;
     }
 
     &__list {
         @extend .list;
-        margin-top: 50px;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
     }
 
-    &__item:not(:last-child) {
+    &__item:nth-child(2n+1) {
         margin-right: 30px;
     }
 
     &__link {
         display: inline-flex;
-      width: 170px;
+      max-width: 210px;
       height: 92px;
       border: 1px solid $clientIconColor;
       border-radius: 4px;
@@ -35,10 +39,10 @@
       }
     }
 
-    &__icon {
-       margin-top: auto;
-      margin-bottom: auto;
-      margin-left: auto;
-      margin-right: auto; 
-    }
+    // &__icon {
+    //    margin-top: auto;
+    //   margin-bottom: auto;
+    //   margin-left: auto;
+    //   margin-right: auto; 
+    // }
 }

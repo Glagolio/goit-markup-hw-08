@@ -26,11 +26,11 @@ url(../images/hero-background.jpg);
 $checkboxIconEmpty: url(../../images/checkbox-empty.svg);
 
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 480px;
 }
 
 
@@ -40,6 +40,6 @@ $checkboxIconEmpty: url(../../images/checkbox-empty.svg);
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }

@@ -4,8 +4,10 @@
     background-color: $backgroudTeamColor;
 
     &__title {
+
+        margin-bottom: 30px;
        font-weight: 700;
-       font-size: 36px;
+       font-size: 28px;
        line-height: 1.17;
        text-align: center;
         color: $titleTextColor;
@@ -13,32 +15,37 @@
 
     &__list {
         @extend .list;
-        display: flex;
-        margin-top: 50px;
+     
     }
 
     &__item {
+        max-width: 450px;
         background-color: $backgroundColor;
 
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 
         &:not(:last-child) {
-                margin-right: 30px;
+            margin-bottom: 30px;
+               
             }
     }
 
+
+
     &__photo {
         display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__inner {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 24px;
     }
 
     &__name {
-        margin-bottom: 10px;
+       margin-bottom: 10px;
        font-weight: 500;
        font-size: 16px;
        line-height: 1.19;
@@ -62,11 +69,15 @@
 .site-social {
     @extend .list;
     display: flex;
-    margin-left: 32px;
+    justify-content: center;
 
-    &__list:not(:last-child) {
-            margin-right: 10px;
-        }
+    &__list {
+        
+    }    
+
+    // &__list:not(:last-child) {
+    //         margin-right: 10px;
+    //     }
     
     &__link {
         display: inline-flex;
