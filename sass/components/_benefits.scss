@@ -2,14 +2,40 @@
      @extend .section;
 
     &__list {
-    @extend .list
+    @extend .list;
+
+    @media screen and (min-width: $table){
+        display: flex;
+        flex-wrap: wrap;
+    }
     }
 
     &__item {
-        
+        max-width: 450px;
+        @media screen and(max-width: 747px) {
         &:not(:last-child) {
          margin-bottom: 30px;
         }
+    }
+        @media screen and(min-width: $table) and (max-width: 1199px){
+        max-width: 354px;
+        
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
+        }
+        
+        @media screen and(min-width: $desktop){
+        max-width: 270px;
+
+        &:nth-child(-n+3) {
+            margin-right: 30px;
+        }
+        }
+
     }
 
     &__title {
@@ -34,7 +60,7 @@
     }
 
     &__icon-box {
-        max-width: 450px;
+        width: 100%;
         padding-top: 20px;
         padding-bottom: 25px;
         
@@ -44,5 +70,7 @@
         justify-content: center;
         background-color: $backgroungIconColor;
         text-align: center;
+
+        
     }
  }
