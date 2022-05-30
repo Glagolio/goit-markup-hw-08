@@ -1069,6 +1069,12 @@ body {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (min-width: 1200px) {
+  .site-modal {
+    max-width: 528px;
+  }
+}
+
 .site-modal__button {
   width: 30px;
   height: 30px;
@@ -1099,7 +1105,6 @@ body {
 }
 
 .site-feedback {
-  max-width: 370px;
   width: 100%;
 }
 
@@ -1107,9 +1112,15 @@ body {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-feedback__title {
+    line-height: 1.17;
+  }
 }
 
 .site-feedback__label:not(:last-child) {
@@ -1147,6 +1158,12 @@ body {
 
 .site-feedback__input:focus {
   border: 1px solid #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-feedback__input {
+    width: 448px;
+  }
 }
 
 .site-feedback__icon {
@@ -1207,6 +1224,12 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .site-feedback__checkbox-field {
+    width: 448px;
+  }
+}
+
 .site-feedback__checkbox {
   width: 1px;
   height: 1px;
@@ -1229,17 +1252,30 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .site-feedback__trety {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .site-feedback__label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .site-feedback__checkbox-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 7px;
+  margin-right: 8px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;

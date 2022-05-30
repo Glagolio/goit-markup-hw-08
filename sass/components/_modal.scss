@@ -36,6 +36,10 @@
     
         transform: translate(-50%, -50%);
 
+        @media screen and (min-width: $desktop) {
+            max-width: 528px;
+        }
+
         &__button {
         width: 30px;
         height: 30px;
@@ -52,6 +56,10 @@
         top: 8px;
 
         cursor: pointer;
+
+       
+
+        
 
         
         }
@@ -70,24 +78,27 @@
         }
     }
         .site-feedback {
-            max-width: 370px;
+            // max-width: 370px;
             width: 100%;
             &__title {
                 margin-bottom: 12px;
                 
                 font-weight: 700;
                 font-size: 20px;
-                line-height: 1.15;
+                line-height: 1.5;
                 text-align: center;
                 
                 color: $titleTextColor;
-
+                @media screen and(min-width: $desktop) {
+                    line-height: 1.17;
+                }
 
                 
                 
             }
 
             &__label {
+                
 
 
                 &:not(:last-child) {
@@ -128,6 +139,11 @@
                 &:focus {
                     border: 1px solid $accentColor;
                 }
+
+                @media screen and (min-width: $desktop) {
+                    width: 448px;
+                }
+
             }
 
             &__icon {
@@ -170,6 +186,9 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 30px;
+                @media screen and (min-width: $desktop) {
+                    width: 448px;
+                }
             }
 
             &__checkbox {
@@ -188,6 +207,11 @@
             font-size: 12px;
             line-height: 0.03em;
             align-items: center;
+
+            @media screen and(min-width:$desktop) {
+                font-size: 14px;
+                line-height: 1.71;
+            }
             
             }
                 
@@ -195,12 +219,15 @@
 
             &__label {
                 display: flex;
+                align-items: center;
+                justify-content: center;
+               
             }
 
             &__checkbox-icon {
                 display: flex;
 
-                margin-right: 7px;
+                margin-right: 8px;
                 width: 16px;
                 height: 15px;
                 border: 2px solid #212121;
