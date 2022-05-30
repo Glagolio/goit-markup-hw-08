@@ -99,6 +99,10 @@
     position: absolute;
     bottom: -1px;
     left: 0;
+    
+    @media screen and (min-width: $desktop) {
+    bottom: 2px;
+    }
     }
     }
     }
