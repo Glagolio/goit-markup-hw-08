@@ -428,6 +428,13 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .site-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .site-hero__title {
   font-weight: 900;
   font-size: 26px;
@@ -435,6 +442,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .site-hero__button {
