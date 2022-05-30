@@ -654,6 +654,27 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-team__item {
+    max-width: 354px;
+  }
+  .site-team__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .site-team__item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-team__item {
+    max-width: 270px;
+  }
+  .site-team__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .site-team__photo {
   display: block;
   margin-left: auto;
