@@ -23,13 +23,13 @@
   padding-left: 0;
 }
 
-.section, .site-benefits, .site-team, .site-clients, .site-footer, .site-portfolio {
+.section, .site-benefits, .site-works, .site-team, .site-clients, .site-footer, .site-portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .section, .site-benefits, .site-team, .site-clients, .site-footer, .site-portfolio {
+  .section, .site-benefits, .site-works, .site-team, .site-clients, .site-footer, .site-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -556,8 +556,12 @@ body {
 
 .site-works {
   padding-top: 0px;
-  padding-bottom: 94px;
-  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .site-works {
+    display: none;
+  }
 }
 
 .site-works__title {

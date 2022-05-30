@@ -1,7 +1,10 @@
 .site-works {
+    @extend .section;
     padding-top: 0px;
-    padding-bottom: 94px;
+    
+    @media screen and (max-width: 1199px){
     display: none;
+    }
 
     &__title {
       font-weight: 700;
