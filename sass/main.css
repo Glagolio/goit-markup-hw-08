@@ -837,8 +837,46 @@ body {
   text-align: center;
 }
 
-.site-footer__item {
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .site-footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-footer__item {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer__inner--table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 127px;
+    margin-bottom: 60px;
+  }
+  .site-footer__item {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-footer__item {
+    width: 231px;
+    margin-right: 70px;
+    text-align: left;
+  }
+  .site-footer__inner--table {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
 }
 
 .site-address {
@@ -885,6 +923,13 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 1200px) {
+  .site-connect__text {
+    text-align: left;
+    margin-top: 9px;
+  }
+}
+
 .site-social--footer {
   margin-bottom: 60px;
 }
@@ -905,6 +950,13 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-subscribe__text {
+    margin-top: 9px;
+    text-align: left;
+  }
 }
 
 .site-subscribe__email {
@@ -928,12 +980,22 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .site-subscribe__email {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 7px;
+  }
+}
+
 .site-subscribe__email:focus {
   border: 1px solid #2196F3;
 }
 
 .site-subscribe__button {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
@@ -952,6 +1014,12 @@ body {
   border-radius: 4px;
   background-color: #2196F3;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-subscribe__button {
+    display: block;
+  }
 }
 
 .site-subscribe__icon {

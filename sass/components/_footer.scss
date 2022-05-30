@@ -5,11 +5,45 @@
     
     &__inner {
         text-align: center;
+        @media screen and (min-width: $desktop) {
+            display: flex;
+        }
     }
-
+    @media screen and (max-width: 767px) {
     &__item {
        margin-bottom: 60px;
     }
+}
+
+    @media screen and (min-width: $table) {
+        &__inner--table{
+            display: flex;
+            justify-content: center;
+
+            height: 127px;
+            margin-bottom: 60px;
+        }
+        &__item {
+           
+            margin-right: 165px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        &__item {
+            width: 231px;
+            margin-right: 70px;
+        
+            text-align: left;
+            
+        }
+        &__inner--table {
+            margin-right: 93px;
+            margin-bottom: 0;
+        }
+    }
+
+
 }
 
 .site-address {
@@ -67,6 +101,10 @@
         line-height: 1.42;
         text-transform: uppercase;
         color: $secondlyAddressColor;
+        @media screen and (min-width: $desktop) {
+                text-align: left;
+                margin-top: 9px;
+            }
     }
 }
 
@@ -87,6 +125,7 @@
 
 .site-subscribe {
     // padding-top: 15px;
+    
 
     &__text {
          margin-bottom: 20px;
@@ -98,6 +137,11 @@
         text-transform: uppercase;
 
         color: $secondlyAddressColor;
+
+        @media screen and (min-width: $desktop) {
+            margin-top: 9px;
+            text-align: left;
+        }
     }
 
     &__email {
@@ -122,13 +166,26 @@
 
         transition: border $animation;
 
+        @media screen and (min-width: $desktop) {
+            width: 358px;
+            margin-bottom: 0;
+            margin-right: 7px;
+        }
+
         &:focus {
             border: 1px solid $accentColor;
         }
     }
 
+    &__field {
+        // display: flex;
+    }
+
     &__button {
+        // display: block;
         position: relative;
+        margin-left: auto;
+        margin-right: auto;
     
         
         padding-top: 10px;
@@ -151,6 +208,10 @@
        background-color: $accentColor;
 
        cursor: pointer;
+
+       @media screen and (min-width: $table) and (max-width: 1199px) {
+           display: block;
+       }
     }
 
     &__icon {
