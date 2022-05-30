@@ -1,8 +1,12 @@
 .site-footer {
-    @extend .section;
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $backgroundFooterColor;
+
+        
     
+    
+
     &__inner {
         text-align: center;
         @media screen and (min-width: $desktop) {
