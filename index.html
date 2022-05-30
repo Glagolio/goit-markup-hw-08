@@ -18,7 +18,7 @@
     <div class="container">
     <div class="site-header__menu">
     <nav class="site-nav">
-        <a href="/" class="logo"><span class="logo--accent">Web</span>Studio</a>
+        <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio</a>
         <button type="button" class="menu-button" data-menu-button aria-controls="menu-container" aria-expanded="false">
             <svg width="40" height="40" class="menu-button__icon" aria-label="Переключатель мобильного меню">
                 <use href="./images/icons.svg#menu" class="menu-button__menu"></use>
@@ -27,7 +27,7 @@
         </button>
         <div class="menu-container" id="menu-container" data-menu>
             <ul class="site-nav__list">
-                <li class="site-nav__items"><a href="" class="site-nav__link site-nav__link--selection">Студия</a></li>
+                <li class="site-nav__items"><a href="./index.html" class="site-nav__link site-nav__link--selection">Студия</a></li>
                 <li class="site-nav__items"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
                 <li class="site-nav__items"><a href="" class="site-nav__link">Контакты</a></li>
             </ul>
@@ -35,16 +35,22 @@
             <ul class="site-contacts">
                 <li class="site-contacts__item">
                     <a href="tel:+380961111111" class="site-contacts__link">
-                        <svg width="20" height="16" class="site-contacts__icon">
-                            <use href="./images/icons.svg#phone"></use>
+                        <svg width="10" height="16" class="site-contacts__icon site-contacts__icon--desktop">
+                            <use href="./images/icons.svg#smartphone"></use>
+                        </svg>
+                        <svg width="10" height="14" class="site-contacts__icon site-contacts__icon--table">
+                            <use href="./images/icons.svg#smartphone-table"></use>
                         </svg>+38 096 111 11 11</a>
                     </li>
                 <li class="site-contacts__item">
                     <a href="mailto:info@devstudio.com" class="site-contacts__link">
-                        <svg width="16" height="12" class="site-contacts__icon">
+                        <svg width="16" height="12" class="site-contacts__icon site-contacts__icon--desktop">
                             <use href="./images/icons.svg#letter"></use>
+                        </svg>
+                        <svg width="14" height="10" class="site-contacts__icon site-contacts__icon--table">
+                            <use href="./images/icons.svg#letter-table"></use>
                         </svg>info@devstudio.com</a>
-                </li>
+                </li></ul>
                 <ul class="menu-social">
                     <li class="menu-social__item">
                         <a href="" class="menu-social__link">Instagram</a>

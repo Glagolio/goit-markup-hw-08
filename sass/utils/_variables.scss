@@ -23,14 +23,29 @@ $animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 $heroBackground: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 url(../images/hero-background.jpg);
 
-$checkboxIconEmpty: url(../../images/checkbox-empty.svg);
+$mobile: 480px;
+$table: 768px;
+$desktop: 1200px;
 
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
     max-width: 480px;
+
+
+    @media screen and (min-width: $table) {
+        max-width: $table;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
+
+
+    
 }
 
 

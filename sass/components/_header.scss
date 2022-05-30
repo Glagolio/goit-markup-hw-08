@@ -4,6 +4,11 @@
     &__menu {
         padding-top: 16px;
         padding-bottom: 16px;
+
+        @media screen and(min-width: $table) {
+            padding-top: 21px;
+            padding-bottom: 21px;
+        }
         
     }
 }
@@ -24,25 +29,38 @@
     
     &__list {
           @extend .list;
+        @media screen and (min-width: $table) {
+            display: flex;
+            align-items: center;
+        }
     }
 
 
     &__items:not(:last-child) {
-    margin-bottom: 32px;
+     @media screen and (max-width: 767px) {
+     margin-bottom: 32px;
+     }
+     @media screen and(min-width: $table) {
+         margin-right: 50px;
+     }
     }
 
     &__items:first-child {
+        @media screen and (max-width: 767px) {
         margin-bottom: 35.71px;
+        }
     }
 
     &__items:last-child {
+        @media screen and (max-width: 767px) {
         margin-bottom: 306px;
+        }
     }
 
 
     &__link {
     
-
+    
     position: relative;
 
     color: $titleTextColor;
@@ -54,6 +72,12 @@
     text-decoration: none;
     transition: color $animation;
 
+    @media screen and (min-width: $table) {
+        font-size: 14px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
     &:hover, &focus {
         color: $accentColor;
     }
@@ -62,19 +86,21 @@
         color: $accentColor;
     }
 
-    // &--selection::after {
-    // content: '';
-    // height: 4px;
-    // width: 100%;
+    &--selection::after {
+    @media screen and (min-width: $table) {
+    content: '';
+    height: 4px;
+    width: 100%;
 
-    // background-color: $accentColor;
+    background-color: $accentColor;
 
-    // border-radius: 2px;
+    border-radius: 2px;
 
-    // position: absolute;
-    // bottom: -1px;
-    // left: 0;
-    // }
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    }
+    }
     }
 }
 
@@ -104,6 +130,10 @@
    &.is-open &__menu {
        display: none;
    }
+
+   @media screen and (min-width: $table) {
+       display: none;
+   }
 }
 
 // .menu-button:hover .menu-button__menu,
@@ -112,6 +142,7 @@
 //  }
 
 .menu-container {
+    @media screen and(max-width: 767px) {
     display: none;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -132,20 +163,56 @@
         display: block;
     }
     
-    
+}
+    @media screen and(min-width: $table) {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
 }
 
 .site-contacts {
     @extend .list;
+
+    @media screen and(min-width: $table) {
+        display: flex;
+        flex-direction: column-reverse;
+
+        &__item {
+            display: flex;
+        
+        }
+    }
+     @media screen and(min-width: $desktop) {
+        flex-direction: row-reverse;
+    }
     
     
     &__item {
+        @media screen and(max-width: 767px) {
         margin-bottom: 32px;
+        }
     }
 
-    &__item:last-child{
+    &__item:last-child {
         margin-bottom: 64px;
-    }
+        @media screen and (min-width: $table) {
+        margin-bottom: 10px;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+            
+        }
+    
+    // &__item:not(:last-child) {
+
+    //     margin-bottom: 10px;
+    // }
+
+
     
 
     &__link {
@@ -159,26 +226,56 @@
     text-decoration: none;
     transition: color $animation;
 
+    @media screen and(min-width:$table) {
+        font-size: 12px;
+        display: inline-flex;
+        align-items: center;
+    }
+
         &:hover, &:focus {
             color: $accentColor;
         }
 
         .site-contacts__item:first-child & {
+           @media screen and (max-width: 767px) {
             font-size: 34px;
             line-height: 1.17;
             color: $accentColor;
+           }
         }
 
     }
 
     &__icon {
+  
         display: none;
     fill: currentColor;
     margin-bottom: -1px;
 
+    @media screen and (min-width: $table) {
+       display: flex;
+        margin-right: 8px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-right: 10px;
+    }
+
         &:hover {
             fill: currentColor;
         }
+
+        &--desktop {
+            @media screen and (max-width: 1199px) {
+                display: none;
+            }
+        }
+
+        &--table {
+            @media screen and (min-width: $desktop) {
+                display: none;
+            }
+        }
+        
     }
 }
 
@@ -207,6 +304,10 @@
     &__line {
         margin-right: 10px;
         
+    }
+
+    @media screen and(min-width: $table) {
+        display: none;
     }
 }
 
