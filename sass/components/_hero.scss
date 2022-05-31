@@ -6,10 +6,11 @@
     max-width: 1600px;
 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 480px 400px;
     background-position: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image-mobile.jpg);
     text-align: center;
+    
 
     @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -19,7 +20,7 @@
     
     @media screen and(min-width: $table) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image-table.jpg);
-
+        background-size: 768px 400px;
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
