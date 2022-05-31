@@ -291,10 +291,12 @@
     font-size: 18px;
     line-height: 1.22;
     align-items: center;
+   
 
     &__item:not(:last-child) {
         margin-right: 10px;
-        
+        padding-right: 10px;
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
 
     &__link {

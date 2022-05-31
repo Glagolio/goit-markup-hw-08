@@ -33,7 +33,7 @@
                         <ul class="site-nav__list">
                             <li class="site-nav__items"><a href="./index.html"
                                     class="site-nav__link">Студия</a></li>
-                            <li class="site-nav__items"><a href="./portfolio.html" class="site-nav__link site-nav__link--selection">Портфолио</a></li>
+                            <li class="site-nav__items"><a href="./portfolio.html" class="site-nav__link  site-nav__link--selection">Портфолио</a></li>
                             <li class="site-nav__items"><a href="" class="site-nav__link">Контакты</a></li>
                         </ul>
     
@@ -62,24 +62,15 @@
                                 <a href="" class="menu-social__link">Instagram</a>
     
                             </li>
-                            <svg width="1" height="22" class="menu-social__line">
-                                <use href="./images/icons.svg#line"></use>
-                            </svg>
                             <li class="menu-social__item">
                                 <a href="" class="menu-social__link">Twitter</a>
     
                             </li>
-                            <svg width="1" height="22" class="menu-social__line">
-                                <use href="./images/icons.svg#line"></use>
-                            </svg>
                             <li class="menu-social__item">
                                 <a href="" class="menu-social__link">Facebook</a>
     
-                                </svg>
+    
                             </li>
-                            <svg width="1" height="22" class="menu-social__line">
-                                <use href="./images/icons.svg#line"></use>
-                            </svg>
                             <li class="menu-social__item">
                                 <a href="" class="menu-social__link">LinkedIn</a>
                             </li>
@@ -112,7 +103,15 @@
         <ul class="portfolio-works__list">
             <li class="portfolio-works__item"><a href="" class="portfolio-works__link">
                 <div class="portfolio-works__overlay">
-                    <img src="./images/portfolio-1.jpg" alt="Ноутбук" width="370" class="portfolio-works__photo">
+                    <picture>
+                        <source srcset="./images/portfolio-1-mobile.jpg 1x, ./images/portfolio-1-mobile@2x.jpg 2x" media="(max-width:767px)" />
+                        <source srcset="./images/portfolio-1-table.jpg 1x, ./images/portfolio-1-table@2x.jpg 2x"
+                            media="(min-width:768px) and (max-width:1199px)" />
+                        <source srcset="./images/portfolio-1-desktop.jpg 1x, ./images/portfolio-1-desktop@2x.jpg 2x" media="(min-width:1200px)" />
+                    
+                        <img src="./images/portfolio-1.jpg" alt="Ноутбук" class="portfolio-works__photo">
+
+                    </picture>
                         <div class="portfolio-works__block">
                             <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -124,7 +123,15 @@
                 </a></li>
             <li class="portfolio-works__item"><a href="" class="portfolio-works__link">
                             <div class="portfolio-works__overlay">
-                                <img src="./images/portfolio-2.jpg" alt="Баскетбол" width="370" class="portfolio-works__photo">
+                                <picture>
+                                    <source srcset="./images/portfolio-2-mobile.jpg 1x, ./images/portfolio-2-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)" />
+                                    <source srcset="./images/portfolio-2-table.jpg 1x, ./images/portfolio-2-table@2x.jpg 2x"
+                                        media="(min-width:768px) and (max-width:1199px)" />
+                                    <source srcset="./images/portfolio-2-desktop.jpg 1x, ./images/portfolio-2-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                 <img src="./images/portfolio-2.jpg" alt="Баскетбол" class="portfolio-works__photo">
+                                </picture>
                                 <div class="portfolio-works__block">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                         получитьисчерпывающие сведения о компании или частном лице.</p>
@@ -137,7 +144,16 @@
                 </a></li>
             <li class="portfolio-works__item"><a href="" class="portfolio-works__link">
                             <div class="portfolio-works__overlay">
-                                <img src="./images/portfolio-3.jpg" alt="Лого рыбного ресторана" width="370" class="portfolio-works__photo">
+                                <picture>
+                                    <source srcset="./images/portfolio-3-mobile.jpg 1x, ./images/portfolio-3-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)" />
+                                    <source srcset="./images/portfolio-3-table.jpg 1x, ./images/portfolio-3-table@2x.jpg 2x"
+                                        media="(min-width:768px) and (max-width:1199px)" />
+                                    <source srcset="./images/portfolio-3-desktop.jpg 1x, ./images/portfolio-3-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                 <img src="./images/portfolio-3.jpg" alt="Лого рыбного ресторана" class="portfolio-works__photo">
+
+                                </picture>
                                 <div class="portfolio-works__block">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                         получить исчерпывающие сведения о компании или частном лице.</p>
@@ -150,7 +166,16 @@
                 </a></li>
             <li class="portfolio-works__item"><a href="" class="portfolio-works__link">
                             <div class="portfolio-works__overlay">
-                                <img src="./images/portfolio-4.jpg" alt="Наушники" width="370" class="portfolio-works__photo">
+                                <picture>
+                                    <source srcset="./images/portfolio-4-mobile.jpg 1x, ./images/portfolio-4-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)" />
+                                    <source srcset="./images/portfolio-4-table.jpg 1x, ./images/portfolio-4-table@2x.jpg 2x"
+                                        media="(min-width:768px) and (max-width:1199px)" />
+                                    <source srcset="./images/portfolio-4-desktop.jpg 1x, ./images/portfolio-4-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                <img src="./images/portfolio-4.jpg" alt="Наушники" class="portfolio-works__photo">
+                                </picture>
+                                
                                 <div class="portfolio-works__block">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                         получить исчерпывающие сведения о компании или частном лице.</p>
@@ -163,7 +188,16 @@
                 </a></li>
             <li class="portfolio-works__item"><a href="" class="portfolio-works__link">
                             <div class="portfolio-works__overlay">
-                                <img src="./images/portfolio-5.jpg" alt="Коробки" width="370" class="portfolio-works__photo">
+                                <picture>
+                                    <source srcset="./images/portfolio-5-mobile.jpg 1x, ./images/portfolio-5-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)" />
+                                    <source srcset="./images/portfolio-5-table.jpg 1x, ./images/portfolio-5-table@2x.jpg 2x"
+                                        media="(min-width:768px) and (max-width:1199px)" />
+                                    <source srcset="./images/portfolio-5-desktop.jpg 1x, ./images/portfolio-5-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                <img src="./images/portfolio-5.jpg" alt="Коробки" class="portfolio-works__photo">
+
+                                </picture>
                                 <div class="portfolio-works__block">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                         получить исчерпывающие сведения о компании или частном лице.</p>
@@ -176,7 +210,15 @@
                 </a></li>
             <li class="portfolio-works__item"><a href="" class="portfolio-works__link">
                             <div class="portfolio-works__overlay">
-                                <img src="./images/portfolio-6.jpg" alt="Моноблок" width="370" class="portfolio-works__photo">
+                                <picture>
+                                    <source srcset="./images/portfolio-6-mobile.jpg 1x, ./images/portfolio-6-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)" />
+                                    <source srcset="./images/portfolio-6-table.jpg 1x, ./images/portfolio-6-table@2x.jpg 2x"
+                                        media="(min-width:768px) and (max-width:1199px)" />
+                                    <source srcset="./images/portfolio-6-desktop.jpg 1x, ./images/portfolio-6-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                <img src="./images/portfolio-6.jpg" alt="Моноблок" class="portfolio-works__photo">
+                                </picture>
                                 <div class="portfolio-works__block">
                                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
@@ -190,7 +232,16 @@
                 </a></li>
             <li class="portfolio-works__item"><a href="" class="portfolio-works__link">
                             <div class="portfolio-works__overlay">
-                                <img src="./images/portfolio-7.jpg" alt="Журнал" width="370" class="portfolio-works__photo">
+                                <picture>
+                                    <source srcset="./images/portfolio-7-mobile.jpg 1x, ./images/portfolio-7-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)" />
+                                    <source srcset="./images/portfolio-7-table.jpg 1x, ./images/portfolio-7-table@2x.jpg 2x"
+                                        media="(min-width:768px) and (max-width:1199px)" />
+                                    <source srcset="./images/portfolio-7-desktop.jpg 1x, ./images/portfolio-7-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                <img src="./images/portfolio-7.jpg" alt="Журнал" class="portfolio-works__photo">
+
+                                </picture>
                                 <div class="portfolio-works__block">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                         получить
@@ -204,7 +255,16 @@
                 </a></li>
             <li class="portfolio-works__item"><a href="" class="portfolio-works__link">
                             <div class="portfolio-works__overlay">
-                            <img src="./images/portfolio-8.jpg" alt="Этикетка" width="370" class="portfolio-works__photo">
+                                <picture>
+                                    <source srcset="./images/portfolio-8-mobile.jpg 1x, ./images/portfolio-8-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)" />
+                                    <source srcset="./images/portfolio-8-table.jpg 1x, ./images/portfolio-8-table@2x.jpg 2x"
+                                        media="(min-width:768px) and (max-width:1199px)" />
+                                    <source srcset="./images/portfolio-8-desktop.jpg 1x, ./images/portfolio-8-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                 <img src="./images/portfolio-8.jpg" alt="Этикетка" class="portfolio-works__photo">
+                                
+                                </picture>
                                 <div class="portfolio-works__block">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                         получить
@@ -218,7 +278,16 @@
                 </a></li>
             <li class="portfolio-works__item"><a href="" class="portfolio-works__link">
                             <div class="portfolio-works__overlay">
-                                <img src="./images/portfolio-9.jpg" alt="Ноутбук" width="370" class="portfolio-works__photo">
+                                <picture>
+                                    <source srcset="./images/portfolio-9-mobile.jpg 1x, ./images/portfolio-9-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)" />
+                                    <source srcset="./images/portfolio-9-table.jpg 1x, ./images/portfolio-9-table@2x.jpg 2x"
+                                        media="(min-width:768px) and (max-width:1199px)" />
+                                    <source srcset="./images/portfolio-9-desktop.jpg 1x, ./images/portfolio-9-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                 <img src="./images/portfolio-9.jpg" alt="Ноутбук" class="portfolio-works__photo">
+                                    
+                                </picture>
                                 <div class="portfolio-works__block">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                         получить

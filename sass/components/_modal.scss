@@ -11,6 +11,8 @@
     
         transition: opacity $animation, transform $animation;
 
+        overflow-y: scroll;
+
         &.is-hidden {
              opacity: 0;
             pointer-events: none;
@@ -235,22 +237,25 @@
                 background-color: transparent;
 
                 position: relative;
+               
 
                 transition: border $animation, background-color $animation;
 
              .site-feedback__checkbox:checked + & {
                 border: 2px solid #2196F3;
                 background-color: #2196F3;
+             
             }
 
         }
 
             &__svg {
-             
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+
+                
             }
 
             

@@ -5,13 +5,39 @@
     padding-bottom: 118px;
     max-width: 1600px;
 
-    background-image: $heroBackground;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    
-
+    background-image: url(../images/background-image-mobile.jpg);
     text-align: center;
+
+    @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/background-image-mobile@2x.jpg);
+            }
+    
+    @media screen and(min-width: $table) {
+        background-image: url(../images/background-image-table.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/background-image-table@2x.jpg);
+            }   
+    }
+
+    @media screen and(min-width: $desktop) {
+        background-image: url(../images/background-image-desktop.jpg);
+        background-size:cover;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/background-image-desktop@2x.jpg);
+            }
+        }
+    @media screen and (max-width: 479px) {
+    }
 
     @media screen and (min-width: $desktop) {
         padding-top: 200px;
