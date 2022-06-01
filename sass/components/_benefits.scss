@@ -7,11 +7,13 @@
     @media screen and (min-width: $table){
         display: flex;
         flex-wrap: wrap;
+        // justify-content: space-between;
     }
     }
 
     &__item {
         max-width: 450px;
+        
         @media screen and(max-width: 747px) {
         &:not(:last-child) {
          margin-bottom: 30px;
@@ -52,6 +54,10 @@
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
+
+        @media screen and (min-width: $table) {
+            text-align: left;
+        }
     }
 
     &__text {
